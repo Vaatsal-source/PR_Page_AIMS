@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --font-bebas: "Bebas Neue", sans-serif;
+}
 
 :root {
   --bg: #07070a;
@@ -124,9 +129,10 @@ body {
 }
 
 .showcase-kicker {
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.2em;
+  font-family: var(--font-bebas);
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
   color: var(--accent);
   text-transform: uppercase;
   margin-bottom: 1rem;

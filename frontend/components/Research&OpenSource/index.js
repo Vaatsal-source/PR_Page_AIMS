@@ -4,41 +4,33 @@ export default function ResearchAndOpenSource() {
       {/* 2x2 Image Grid Left */}
       <div className="image-grid-2x2">
         <div className="showcase-image-wrapper">
-          <div className="placeholder-bg">
-            <span className="text-[9px] text-[var(--muted)] font-mono">[ Image: NeurIPS Publication ]</span>
-          </div>
+          <img src="/LayeredNeon.png" alt="LayeredNeon" />
           <div className="image-hover-overlay">
-            <div className="overlay-tag">// NEURIPS SEA 2025</div>
+            <div className="overlay-tag">NEURIPS SEA 2025</div>
             <h4 className="overlay-title">EVOLVE-MEM</h4>
             <p className="overlay-desc">Self-Adaptive memory systems for Agentic AI.</p>
           </div>
         </div>
         <div className="showcase-image-wrapper">
-          <div className="placeholder-bg">
-            <span className="text-[9px] text-[var(--muted)] font-mono">[ Image: CVPR restore ]</span>
-          </div>
+          <img src="/NTIRE.png" alt="LayeredNeon" />
           <div className="image-hover-overlay">
-            <div className="overlay-tag">// CVPR NTIRE 2026</div>
+            <div className="overlay-tag">CVPR NTIRE 2026</div>
             <h4 className="overlay-title">Underwater restoration</h4>
             <p className="overlay-desc">Phase-guided representation pixels restoration models.</p>
           </div>
         </div>
         <div className="showcase-image-wrapper">
-          <div className="placeholder-bg">
-            <span className="text-[9px] text-[var(--muted)] font-mono">[ Image: GSoC Climate ]</span>
-          </div>
+          <img src="/Lumen.png" alt="Lumen" />
           <div className="image-hover-overlay">
-            <div className="overlay-tag">// GSOC 2026</div>
+            <div className="overlay-tag">GSOC 2026</div>
             <h4 className="overlay-title">Aman Kumar</h4>
             <p className="overlay-desc">Lumen + Xarray integration grant victory.</p>
           </div>
         </div>
         <div className="showcase-image-wrapper">
-          <div className="placeholder-bg">
-            <span className="text-[9px] text-[var(--muted)] font-mono">[ Image: ICML Audio ]</span>
-          </div>
+          <img src="/Flow.png" alt="Flowfake" />
           <div className="image-hover-overlay">
-            <div className="overlay-tag">// ICML ML4AUDIO 2026</div>
+            <div className="overlay-tag">ICML ML4AUDIO 2026</div>
             <h4 className="overlay-title">FlowFake</h4>
             <p className="overlay-desc">Liquid Networks detecting audio deepfakes.</p>
           </div>
