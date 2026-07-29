@@ -601,6 +601,14 @@ body {
     order: 2;
   }
 
+  .research-open-source-section .showcase-info {
+    order: 1;
+  }
+
+  .research-open-source-section .image-grid-2x2 {
+    order: 2;
+  }
+
   .showcase-kicker {
     font-size: 2.2rem;
     line-height: 1;

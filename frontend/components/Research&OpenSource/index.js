@@ -1,6 +1,6 @@
 export default function ResearchAndOpenSource() {
   return (
-    <section id="research" className="showcase-section" style={{ gridTemplateColumns: "1.2fr 1fr" }}>
+    <section id="research" className="showcase-section research-open-source-section" style={{ gridTemplateColumns: "1.2fr 1fr" }}>
       {/* 2x2 Image Grid Left */}
       <div className="image-grid-2x2">
         <div className="showcase-image-wrapper">
