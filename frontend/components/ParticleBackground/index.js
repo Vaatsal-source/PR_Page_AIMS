@@ -27,7 +27,7 @@ export default function ParticleBackground() {
     mount.appendChild(renderer.domElement);
 
     // ── Particle sparks ───────────────────────────────────────────────────────
-    const PARTICLE_COUNT = 2200;
+    const PARTICLE_COUNT = 500;
     const positions      = new Float32Array(PARTICLE_COUNT * 3);
     const pColors        = new Float32Array(PARTICLE_COUNT * 3);
     const sizes          = new Float32Array(PARTICLE_COUNT);
