@@ -1,8 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "AIMS DTU // Annual Report Control Surface",
-  description: "A brutalist single-page presentation of AIMS DTU annual report achievements.",
+  title: "AIMS DTU",
+  description: "A presentation of AIMS DTU achievements.",
 };
 
 export default function RootLayout({ children }) {
