@@ -10,7 +10,7 @@ import { useEffect, useRef } from "react";
  * @param {string} [axis]  "Y" (default) or "X"
  * @returns React ref to attach to the element
  */
-export function useParallax(factor = 0.25, axis = "Y") {
+export function useParallax(factor = 0.05, axis = "Y") {
   const ref = useRef(null);
 
   useEffect(() => {
@@ -73,10 +73,10 @@ export default function ParallaxSection({
         requestAnimationFrame(() => {
           const rect = el.getBoundingClientRect();
           const viewH = window.innerHeight;
-          // How far the section midpoint is from the viewport center
           const sectionMid = rect.top + rect.height / 2;
-          const viewMid    = viewH / 2;
-          const delta      = (sectionMid - viewMid) * factor;
+          const viewMid = viewH / 2;
+          const progress = Math.max(-1, Math.min(1, (viewMid - sectionMid) / viewMid));
+          const delta = progress * viewH * factor * 0.35;
 
           el.style.setProperty("--parallax-shift", `${delta}px`);
           ticking = false;
@@ -96,7 +96,7 @@ export default function ParallaxSection({
       ref={ref}
       id={id}
       className={`parallax-section ${className}`}
-      style={{ ...style }}
+      style={{ ...style, "--parallax-shift": "0px" }}
       {...rest}
     >
       {children}
