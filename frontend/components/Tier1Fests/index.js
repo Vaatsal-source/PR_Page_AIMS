@@ -31,41 +31,33 @@ export default function Tier1Fests() {
 
       <div className="image-grid-2x2">
         <div className="showcase-image-wrapper">
-          <div className="placeholder-bg">
-            <span className="text-[9px] text-[var(--muted)] font-mono">[ Image: Apogee Trophy ]</span>
-          </div>
+          <img src="/EightFold.png" alt="EightFold Hackathon" />
           <div className="image-hover-overlay">
-            <div className="overlay-tag">// BITS APOGEE 2026</div>
+            <div className="overlay-tag">BITS APOGEE 2026</div>
             <h4 className="overlay-title">EightFold Hackathon</h4>
             <p className="overlay-desc">Podium winners showing custom pipeline systems.</p>
           </div>
         </div>
         <div className="showcase-image-wrapper">
-          <div className="placeholder-bg">
-            <span className="text-[9px] text-[var(--muted)] font-mono">[ Image: Micromouse ]</span>
-          </div>
+          <img src="/Micro3.png" alt="Micromouse Maze" />
           <div className="image-hover-overlay">
-            <div className="overlay-tag">// ROBOTICS</div>
+            <div className="overlay-tag">ROBOTICS</div>
             <h4 className="overlay-title">Micromouse Maze</h4>
             <p className="overlay-desc">Autonomous robotics navigation algorithms.</p>
           </div>
         </div>
         <div className="showcase-image-wrapper">
-          <div className="placeholder-bg">
-            <span className="text-[9px] text-[var(--muted)] font-mono">[ Image: IIT Bombay Techfest ]</span>
-          </div>
+          <img src="/ZerveAI.png" alt="ZerveAI Datathon" />
           <div className="image-hover-overlay">
-            <div className="overlay-tag">// IIT BOMBAY 2025</div>
+            <div className="overlay-tag">IIT BOMBAY 2025</div>
             <h4 className="overlay-title">ZerveAI Datathon</h4>
             <p className="overlay-desc">DTU model ranking #1 in prediction speed and accuracy.</p>
           </div>
         </div>
         <div className="showcase-image-wrapper">
-          <div className="placeholder-bg">
-            <span className="text-[9px] text-[var(--muted)] font-mono">[ Image: HeistGPT ]</span>
-          </div>
+          <img src="/Heist2.png" alt="Heist2" />
           <div className="image-hover-overlay">
-            <div className="overlay-tag">// INVICTUS 2026</div>
+            <div className="overlay-tag">INVICTUS 2026</div>
             <h4 className="overlay-title">HeistGPT UGV</h4>
             <p className="overlay-desc">Computer vision model targeting simulation coordinates.</p>
           </div>

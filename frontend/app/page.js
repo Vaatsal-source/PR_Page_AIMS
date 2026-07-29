@@ -25,9 +25,6 @@ export default function Home() {
           <a href="#fest-victories" className="nav-link">Fest Victories</a>
           <a href="#research" className="nav-link">Research &amp; OS</a>
           <a href="#records" className="nav-link">Extracted Records</a>
-          <span className="nav-link active" onClick={() => setGridEnabled(!gridEnabled)} style={{ cursor: "pointer" }}>
-            GRID_{gridEnabled ? "ON" : "OFF"}
-          </span>
         </div>
       </nav>
 

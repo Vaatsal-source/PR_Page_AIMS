@@ -4,42 +4,34 @@ export default function SIHFinalsAndGenAI() {
       {/* 2x2 Image Grid Left */}
       <div className="image-grid-2x2">
         <div className="showcase-image-wrapper">
-          <div className="placeholder-bg">
-            <span className="text-[9px] text-[var(--muted)] font-mono">[ Image: Gradient Ascent ]</span>
-          </div>
+          <img src="/GradientAscent.png" alt="Gradient Ascent" />
           <div className="image-hover-overlay">
-            <div className="overlay-tag">// SIH FINALIST</div>
+            <div className="overlay-tag">SIH FINALIST</div>
             <h4 className="overlay-title">Gradient Ascent</h4>
             <p className="overlay-desc">Multimodal Audio MoE model running locally.</p>
           </div>
         </div>
         <div className="showcase-image-wrapper">
-          <div className="placeholder-bg">
-            <span className="text-[9px] text-[var(--muted)] font-mono">[ Image: ChocoRev Engine ]</span>
-          </div>
+          <img src="/ChocoRev.png" alt="ChocoRev" />
           <div className="image-hover-overlay">
-            <div className="overlay-tag">// SIH FINALIST</div>
+            <div className="overlay-tag">SIH FINALIST</div>
             <h4 className="overlay-title">ChocoRev</h4>
             <p className="overlay-desc">GNN candidate-opportunity recommendation engine.</p>
           </div>
         </div>
         <div className="showcase-image-wrapper">
-          <div className="placeholder-bg">
-            <span className="text-[9px] text-[var(--muted)] font-mono">[ Image: NeuralShural ]</span>
-          </div>
+          <img src="/NeuralShural.png" alt="NeuralShural" />
           <div className="image-hover-overlay">
-            <div className="overlay-tag">// SIH FINALIST</div>
+            <div className="overlay-tag">SIH FINALIST</div>
             <h4 className="overlay-title">NeuralShural</h4>
             <p className="overlay-desc">Computer Vision systems for counterfeit IC analysis.</p>
           </div>
         </div>
         <div className="showcase-image-wrapper">
-          <div className="placeholder-bg">
-            <span className="text-[9px] text-[var(--muted)] font-mono">[ Image: TruthLens Demo ]</span>
-          </div>
+          <img src="/GenAI.png" alt="GenAIExchange" />
           <div className="image-hover-overlay">
-            <div className="overlay-tag">// GOOGLE GENAI</div>
-            <h4 className="overlay-title">TruthLens Platform</h4>
+            <div className="overlay-tag">GOOGLE GENAI</div>
+            <h4 className="overlay-title">GenAI Exchange 2025</h4>
             <p className="overlay-desc">Top 10 India build verifying misinformation leaks.</p>
           </div>
         </div>
