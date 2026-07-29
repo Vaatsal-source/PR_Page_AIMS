@@ -7,7 +7,7 @@ import SIHFinalsAndGenAI from "@/components/SIHfinals&GenAI";
 import Tier1Fests from "@/components/Tier1Fests";
 import ResearchAndOpenSource from "@/components/Research&OpenSource";
 import ExtractedRecords from "@/components/ExtractedRecords";
-
+import Logo from "@/components/LogoAIMS/Logo";
 export default function Home() {
   const [gridEnabled, setGridEnabled] = useState(true);
 
@@ -18,7 +18,7 @@ export default function Home() {
       {/* Navigation Bar */}
       <nav className="navbar">
         <div className="nav-logo" style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
-          <img src="/logo.png" alt="AIMS DTU Logo" style={{ height: "30px", width: "auto", objectFit: "contain" }} />
+          <Logo height={32} />
         </div>
         <div className="nav-links">
           <a href="#hackathons" className="nav-link">Hackathons</a>
@@ -51,8 +51,7 @@ export default function Home() {
         <footer className="main-footer">
           <div className="footer-left">
             <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "0.5rem" }}>
-              <img src="/logo.png" alt="AIMS DTU Logo" style={{ height: "24px", width: "auto", objectFit: "contain" }} />
-              <span>AIMS DTU</span>
+              <Logo height={32} />
             </div>
             <div style={{ fontSize: "0.8rem", color: "var(--muted)" }}>© 2026 Delhi Technological University. All rights reserved.</div>
           </div>

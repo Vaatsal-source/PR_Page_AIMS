@@ -2,7 +2,7 @@ export default function ISROAndSIH() {
   return (
     <section id="hackathons" className="showcase-section">
       <div className="showcase-info">
-        <span className="showcase-kicker">National Winner</span>
+        <span className="showcase-kicker">National Winners</span>
         <h2 className="showcase-title">ISRO & Smart India Hackathons</h2>
         <p className="showcase-desc">
           AIMS DTU teams conquered India's most prestigious government hackathons, securing National Winner titles 
