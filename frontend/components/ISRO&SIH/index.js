@@ -6,25 +6,25 @@ export default function ISROAndSIH() {
         <h2 className="showcase-title">ISRO & Smart India Hackathons</h2>
         <p className="showcase-desc">
           AIMS DTU teams conquered India's most prestigious government hackathons, securing National Winner titles 
-          by engineering deep-learning and hardware systems for space nowcasting and smart governance.
+          by engineering deep learning and hardware systems.
         </p>
         <div className="showcase-details">
           <div className="detail-item">
             <div className="detail-tag">ISRO Bharatiya Antariksh Hackathon (BAH) 2025</div>
             <div className="detail-text">
-              <strong>Team Rocket League</strong>{" "}(Kartik Aggarwal, Krish Bansal, Mayank Jangid, Kushal Khemka) — Developed "Chasing The Clouds: Diffusion Based Satellite Nowcasting using INSAT 3DR/3DS Data".
+              <strong>Team Rocket League</strong> Developed "Chasing The Clouds: Diffusion Based Satellite Nowcasting using INSAT 3DR/3DS Data".
             </div>
           </div>
           <div className="detail-item">
             <div className="detail-tag">Smart India Hackathon (SIH) 2025 (National Winner)</div>
             <div className="detail-text">
-              <strong>Team ToinCoss</strong>{" "}(Aryan Sood, Aaarat Chadda, Aarushi Anand, Rudransh Singh Rathore, Shubhank Gupta, Vivaan Jain) — Built Anti Proxy, an ESP32 & AI-driven smart classroom attendance system.
+              <strong>Team ToinCoss</strong> Built Anti Proxy, an ESP32 & AI-driven smart classroom attendance system.
             </div>
           </div>
           <div className="detail-item">
             <div className="detail-tag">NCIIPC AI Grand Challenge 2025 (National Winner)</div>
             <div className="detail-text">
-              <strong>PS-1</strong>{" "}(LLMs to Detect Vulnerability in Open-Source Software) — Cleared Stage 1 & Stage 2 evaluations at IIT Delhi.
+              <strong>PS-1</strong> Cleared Stage 1 & Stage 2 evaluations at IIT Delhi.
             </div>
           </div>
         </div>

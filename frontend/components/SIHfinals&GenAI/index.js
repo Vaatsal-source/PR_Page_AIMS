@@ -38,28 +38,28 @@ export default function SIHFinalsAndGenAI() {
       </div>
 
       <div className="showcase-info">
-        <span className="showcase-kicker">High-Performance Engineering</span>
-        <h2 className="showcase-title">SIH Finalists &amp; Google GenAI</h2>
+        <span className="showcase-kicker">Top Engineering</span>
+        <h2 className="showcase-title">Top 5 in SIH &amp; Top 10 in Google GenAI</h2>
         <p className="showcase-desc">
           Pioneering custom AI architectures, neural graphs, and computer vision algorithms in national finals.
         </p>
         <div className="showcase-details">
           <div className="detail-item">
-            <div className="detail-tag">SIH Grand Finalist — Team Gradient Ascent</div>
-            <div className="detail-text">Multimodal Audio Language Model using Mixture-of-Experts architecture.</div>
+            <div className="detail-tag">SIH Grand Finalist Team Gradient Ascent</div>
+            <div className="detail-text">Multimodal Audio Language Model using Mixture of Experts architecture.</div>
           </div>
           <div className="detail-item">
-            <div className="detail-tag">SIH Grand Finalist — Team ChocoRev</div>
-            <div className="detail-text">GNN-driven multi-objective candidate-opportunity matching engine.</div>
+            <div className="detail-tag">SIH Grand Finalist Team ChocoRev</div>
+            <div className="detail-text">GNN-driven multi objective candidate opportunity matching engine.</div>
           </div>
           <div className="detail-item">
-            <div className="detail-tag">SIH Grand Finalist — Team NeuralShural</div>
+            <div className="detail-tag">SIH Grand Finalist Team NeuralShural</div>
             <div className="detail-text">Multimodal AI system for counterfeit IC detection.</div>
           </div>
           <div className="detail-item">
             <div className="detail-tag">Google GenAI Exchange 2025 (Top 10 in India)</div>
             <div className="detail-text">
-              <strong>Team Authenticoders</strong> — Built TruthLens (Multimodal AI platform to combat misinformation) out of 4,457+ prototypes and 278,000+ developers nationwide.
+              <strong>Team Authenticoders</strong> Built TruthLens (Multimodal AI platform to combat misinformation) out of 4,457+ prototypes and 278,000+ developers nationwide.
             </div>
           </div>
         </div>

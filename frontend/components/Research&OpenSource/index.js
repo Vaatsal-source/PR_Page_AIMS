@@ -47,31 +47,31 @@ export default function ResearchAndOpenSource() {
           <div className="detail-item">
             <div className="detail-tag">Google Summer of Code (GSoC) 2026</div>
             <div className="detail-text">
-              <strong>Aman Kumar</strong> — Integrated Lumen + Xarray for multidimensional climate data visualizations, backed by a $3,000 NumFOCUS/HoloViz grant.
+              Integrated Lumen + Xarray for multidimensional climate data visualizations, backed by a $3,000 NumFOCUS/HoloViz grant.
             </div>
           </div>
           <div className="detail-item">
             <div className="detail-tag">NeurIPS SEA 2025</div>
             <div className="detail-text">
-              "EVOLVE-MEM: A Self-Adaptive Hierarchical Memory Architecture for Next-Generation Agentic AI Systems" (Rishi Shah, Ujjwal Kakkar, Shashvat Singhal, Dinesh Kumar Vishwakarma).
+              "EVOLVE-MEM: A Self Adaptive Hierarchical Memory Architecture for Next Generation Agentic AI Systems".
             </div>
           </div>
           <div className="detail-item">
             <div className="detail-tag">ACL SRW 2026</div>
             <div className="detail-text">
-              "CBAL: Context-Based Agentic Learning for Speaker Diarization Segmentation Refinement" (Odwitiyo Dutta, Dinesh Kumar Vishwakarma).
+              "CBAL: Context Based Agentic Learning for Speaker Diarization Segmentation Refinement".
             </div>
           </div>
           <div className="detail-item">
             <div className="detail-tag">CVPR NTIRE 2026</div>
             <div className="detail-text">
-              "Not All Pixels Sink: Phase-Guided Representation Learning For Underwater Image Restoration" (Abhinav Rajput, Saksham Jain, Sparsh Jain, Dinesh Kumar Vishwakarma).
+              "Not All Pixels Sink: Phase-Guided Representation Learning For Underwater Image Restoration".
             </div>
           </div>
           <div className="detail-item">
             <div className="detail-tag">ICML ML4AUDIO 2026</div>
             <div className="detail-text">
-              "FlowFake: Liquid Networks for Audio Deepfake Detection" (Shivaay Dhondiyal, Divyansh Sharma, Dinesh Kumar Vishwakarma).
+              "FlowFake: Liquid Networks for Audio Deepfake Detection".
             </div>
           </div>
         </div>
