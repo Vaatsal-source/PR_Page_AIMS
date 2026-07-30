@@ -3,17 +3,14 @@ export default function HeroSection() {
     <section className="hero-section" style={{ position: "relative", overflow: "hidden" }}>
 
       <h1 className="hero-main-title hero-enter-1">
-        THE MACHINE LEARNS.<br />THE SOCIETY SHIPS.
+        AT AIMS DTU, WE BUILD COMPETE AND PUBLISH
       </h1>
 
       <p
         className="showcase-desc hero-enter-2"
         style={{ maxWidth: "800px", margin: "0 auto 3rem auto", fontSize: "1.2rem" }}
       >
-        Delhi Technological University's flagship Artificial Intelligence and
-        Machine Learning Society.{" "}
-        Redesigning the future of intelligent agents, computer vision, and
-        national scale software.
+      Hackathon wins, published research, and open-source projects run by students, for students who want to actually ship something.
       </p>
 
       <div className="hero-stats hero-enter-3" style={{ marginTop: "1rem" }}>

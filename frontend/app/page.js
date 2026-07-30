@@ -101,14 +101,18 @@ export default function Home() {
         {/* ── Footer ────────────────────────────────────────────────────── */}
         <footer className="main-footer hero-enter-5">
           <div className="footer-left">
-            <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "0.5rem" }}>
-              <Logo height={32} />
-            </div>
             <div style={{ fontSize: "3.0rem", color: "var(--muted)", fontWeight:"bolder" }}>
               Be Ready For The Orientation on 12th August At BR Audi!
             </div>
           </div>
           <div className="footer-right" style={{ display: "flex", alignItems: "center", gap: "1.5rem" }}>
+            <a href="https://chat.whatsapp.com/J5By5VYhQVJGQXQqvngXul?s=cl&p=a&ilr=1" target="_blank" rel="noopener noreferrer"
+               style={{ display: "flex", alignItems: "center", gap: "0.25rem" }}>
+              <svg style={{ width: "16px", height: "16px", fill: "currentColor" }} viewBox="0 0 24 24">
+                <path d="M20.52 3.48A11.83 11.83 0 0 0 12.02 0C5.5 0 .22 5.28.22 11.78c0 2.08.54 4.11 1.57 5.9L0 24l6.49-1.7a11.78 11.78 0 0 0 5.53 1.41h.01c6.5 0 11.78-5.28 11.78-11.78 0-3.15-1.23-6.11-3.29-8.45Zm-8.5 18.14h-.01a9.76 9.76 0 0 1-4.98-1.37l-.36-.21-3.85 1.01 1.03-3.75-.23-.38a9.76 9.76 0 0 1-1.5-5.2c0-5.4 4.39-9.79 9.81-9.79 2.62 0 5.08 1.02 6.94 2.88a9.75 9.75 0 0 1 2.87 6.92c0 5.4-4.39 9.79-9.72 9.79Zm5.66-7.34c-.31-.16-1.84-.91-2.13-1.01-.29-.11-.5-.16-.71.16-.21.31-.82 1.01-1 1.21-.18.21-.37.24-.68.08-.31-.16-1.31-.48-2.49-1.53-.92-.82-1.53-1.84-1.71-2.15-.18-.31-.02-.48.14-.64.14-.14.31-.37.47-.55.16-.18.21-.31.31-.5.11-.18.05-.34-.02-.48-.08-.16-.71-1.71-.97-2.34-.26-.63-.52-.53-.71-.54l-.61-.01c-.21 0-.55.08-.84.39-.29.31-1.1 1.08-1.1 2.62s1.13 3.03 1.29 3.24c.16.21 2.24 3.42 5.43 4.8.76.33 1.35.52 1.81.66.76.24 1.46.21 2.01.13.61-.09 1.84-.75 2.1-1.48.26-.73.26-1.35.18-1.48-.08-.13-.29-.21-.61-.37Z"/>
+              </svg>
+              WhatsApp
+            </a>
             <a href="https://discord.gg/kuMV32y6P" target="_blank" rel="noopener noreferrer"
                style={{ display: "flex", alignItems: "center", gap: "0.25rem" }}>
               <svg style={{ width: "16px", height: "16px", fill: "currentColor" }} viewBox="0 0 127.14 96.36">
@@ -137,5 +141,4 @@ export default function Home() {
     </main>
   );
 }
-
 
