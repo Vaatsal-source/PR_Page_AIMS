@@ -3,6 +3,7 @@
 import { useState } from "react";
 import dynamic from "next/dynamic";
 import HeroSection from "@/components/HeroSection";
+import Events from "@/components/Events";
 import ISROAndSIH from "@/components/ISRO&SIH";
 import SIHFinalsAndGenAI from "@/components/SIHfinals&GenAI";
 import Tier1Fests from "@/components/Tier1Fests";
@@ -35,9 +36,11 @@ export default function Home() {
           <Logo height={32} />
         </div>
         <div className="nav-links">
+          <a href="#events"    className="nav-link">Events</a>
           <a href="#hackathons"    className="nav-link">Hackathons</a>
           <a href="#fest-victories" className="nav-link">Fest Victories</a>
           <a href="#research"      className="nav-link">Research &amp; OS</a>
+          <a href="#opensource"      className="nav-link">Opensource</a>
           <a href="#records"       className="nav-link">Extracted Records</a>
         </div>
       </nav>
@@ -46,6 +49,12 @@ export default function Home() {
 
         {/* ── Hero ──────────────────────────────────────────────────────── */}
         <HeroSection />
+
+        <ParallaxSection id="events" factor={0.11}>
+          <CascadeReveal staggerMs={110}>
+            <Events />
+          </CascadeReveal>
+        </ParallaxSection>
 
         {/* ── ISRO & SIH ───────────────────────────────────────────────── */}
         <ParallaxSection id="hackathons" factor={0.12}>
@@ -75,12 +84,12 @@ export default function Home() {
           </CascadeReveal>
         </ParallaxSection>
 
-        {/* ── OpenSource ─────────────────────────────────────── */}
-        <ParallaxSection id="research" factor={0.13}>
-          <CascadeReveal staggerMs={100}>
-            <OpenSource/>
+        <ParallaxSection id="opensource" factor={0.10}>
+          <CascadeReveal staggerMs={120}>
+            <OpenSource />
           </CascadeReveal>
         </ParallaxSection>
+
 
         {/* ── Extracted Records ─────────────────────────────────────────── */}
         <ParallaxSection id="records" factor={0.08}>
@@ -128,4 +137,5 @@ export default function Home() {
     </main>
   );
 }
+
 
