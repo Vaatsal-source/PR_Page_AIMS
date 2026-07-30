@@ -104,8 +104,8 @@ export default function Home() {
             <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "0.5rem" }}>
               <Logo height={32} />
             </div>
-            <div style={{ fontSize: "1.2rem", color: "var(--muted)", fontWeight: "bold" }}>
-              Get Ready For The Orientation on 12th August !
+            <div style={{ fontSize: "3.0rem", color: "var(--muted)", fontWeight:"bolder" }}>
+              Be Ready For The Orientation on 12th August At BR Audi!
             </div>
           </div>
           <div className="footer-right" style={{ display: "flex", alignItems: "center", gap: "1.5rem" }}>

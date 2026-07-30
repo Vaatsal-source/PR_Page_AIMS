@@ -4,9 +4,9 @@ import CascadeReveal from "@/components/CascadeReveal";
 const sections = [
   {
     id: "bits-apogee",
-    kicker: "Intercollegiate Battles",
+    kicker: "Intercollege Competitions",
     title: "BITS APOGEE",
-    desc: "A focused look at the BITS Apogee wins.",
+    desc: "A look at Our BITS Apogee wins.",
     items: [
       {
         title: "EightFold AI Hackathon (1st)",
@@ -14,7 +14,7 @@ const sections = [
         desc: "9-hour-long competition involving handling and deployment of APIs along with frontend development.",
       },
       {
-        title: "Kriti Social Impact Hackathon (2st)",
+        title: "Kriti Social Impact Hackathon (2nd)",
         image: "/Kriti.png",
         desc: "Hackathon focused on building affordable, scalable technology solutions for challenges faced by rural communities.",
       },
@@ -33,7 +33,7 @@ const sections = [
   {
     id: "iit-bombay",
     title: "IIT Bombay",
-    desc: "A focused look at the IIT Bombay Techfest wins.",
+    desc: "A look at Our IIT Bombay Techfest wins.",
     items: [
       {
         title: "ZerveAI Datathon (1st)",
@@ -58,7 +58,7 @@ const sections = [
   {
     id: "invictus",
     title: "Invictus",
-    desc: "A focused look at the Invictus wins.",
+    desc: "A look at Our Invictus wins.",
     items: [
       {
         title: "BITS CS Fundamentals (1st and 3rd)",
@@ -89,9 +89,7 @@ function ImageCard({ title, image }) {
     <div className="showcase-image-wrapper">
       <img src={image} alt={title} className="showcase-image" />
       <div className="image-hover-overlay">
-        <div className="overlay-tag">ACHIEVEMENT</div>
         <h4 className="overlay-title">{title}</h4>
-        <p className="overlay-desc">Highlights from {title}</p>
       </div>
     </div>
   );

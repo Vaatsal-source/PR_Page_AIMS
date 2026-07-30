@@ -53,7 +53,7 @@ export default function ResearchAndOpenSource() {
         <span className="showcase-kicker">A* Conferences</span>
         <h2 className="showcase-title">Research &amp; Publications</h2>
         <p className="showcase-desc">
-          Pioneering original research in agentic memory architectures, speaker
+          Original research in agentic memory architectures, speaker
           diarization, underwater restoration, and audio fake detection.
         </p>
         <div className="showcase-details">

@@ -5,7 +5,7 @@ const eventCards = [
   },
   {
     title: "HackDays by MLH",
-    image: "/Hackdays.png",
+    image: "/HackDays.png",
   },
   {
     title: "AIMS X ACM ML Workshop",
@@ -24,7 +24,7 @@ const eventCards = [
     image: "/Quant.png",
   },
   {
-    title: "BuildWithGemma by Google",
+    title: "Build With Gemma by Google",
     image: "/Gemma.png",
   },
 ];
@@ -33,20 +33,13 @@ export default function Events() {
   return (
     <section id="events" className="showcase-section events-section">
       <div className="showcase-info">
-        <span className="showcase-kicker">Main Hero</span>
+        <span className="showcase-kicker">Community Engagements</span>
         <h2 className="showcase-title">Events</h2>
         <p className="showcase-desc">
-          Orientation 2025, HackDays by MLH, AIMS X ACM workshops, Promptify, brAI nwave 2.0,
-          Quant Workshop by WorldQuant, and BuildWithGemma by Google.
+          Organised HackDays by MLH, AIMS X ACM workshops, Promptify, brAInwave 2.0,
+          Quant Workshop by WorldQuant, and Build With Gemma by Google, Orientation 2025, 
         </p>
         <div className="showcase-details">
-          <div className="detail-item">
-            <div className="detail-tag">Orientation 2025</div>
-            <div className="detail-text">
-              18 August 2025, attended by over 1,500 students, introducing AIMS&apos; mottos and
-              showcasing projects like Gesture-Controlled Drones, Voice Cloning, and Traffic Monitoring.
-            </div>
-          </div>
           <div className="detail-item">
             <div className="detail-tag">HackDays by MLH</div>
             <div className="detail-text">
@@ -62,13 +55,13 @@ export default function Events() {
           <div className="detail-item">
             <div className="detail-tag">Promptify</div>
             <div className="detail-text">
-              13 December 2025, during CS Education Week, focused on non-coding Generative AI prompt engineering.
+              13 December 2025, during CS Education Week, focused on non coding Generative AI prompt engineering.
             </div>
           </div>
           <div className="detail-item">
-            <div className="detail-tag">brAI nwave 2.0</div>
+            <div className="detail-tag">brAInwave 2.0</div>
             <div className="detail-text">
-              A 36-hour national hackathon with 4,500+ online registrations, 600+ on-ground participants, and 180+ teams.
+              A 36-hour national hackathon with 4,500+ online registrations, 600+ on ground participants, and 180+ teams.
             </div>
           </div>
           <div className="detail-item">
@@ -78,9 +71,16 @@ export default function Events() {
             </div>
           </div>
           <div className="detail-item">
-            <div className="detail-tag">BuildWithGemma by Google</div>
+            <div className="detail-tag">Build With Gemma by Google</div>
             <div className="detail-text">
               A technical collaboration event centered on building solutions with Google&apos;s Gemma AI ecosystem.
+            </div>
+          </div>
+          <div className="detail-item">
+            <div className="detail-tag">Orientation 2025</div>
+            <div className="detail-text">
+              18 August 2025, attended by over 1,500 students, introducing AIMS&apos;s mottos and
+              showcasing projects like Gesture-Controlled Drones, Voice Cloning, and Traffic Monitoring.
             </div>
           </div>
         </div>
@@ -95,9 +95,7 @@ export default function Events() {
               className="showcase-image"
             />
             <div className="image-hover-overlay">
-              <div className="overlay-tag">EVENT</div>
               <h4 className="overlay-title">{event.title}</h4>
-              <p className="overlay-desc">Highlights from {event.title}</p>
             </div>
           </div>
         ))}

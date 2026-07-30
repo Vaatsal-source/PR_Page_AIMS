@@ -38,10 +38,10 @@ export default function SIHFinalsAndGenAI() {
       </div>
 
       <div className="showcase-info">
-        <span className="showcase-kicker">Top Engineering</span>
+        <span className="showcase-kicker">Top Engineers</span>
         <h2 className="showcase-title">Top 5 in SIH &amp; Top 10 in Google GenAI</h2>
         <p className="showcase-desc">
-          Pioneering custom AI architectures, neural graphs, and computer vision algorithms in national finals.
+          Custom AI architectures, neural graphs, and computer vision algorithms in national finals.
         </p>
         <div className="showcase-details">
           <div className="detail-item">

@@ -2,7 +2,7 @@ export default function OpenSource() {
   return (
     <section id="fest-victories" className="showcase-section">
       <div className="showcase-info">
-        <span className="showcase-kicker">GSSoC 26</span>
+        <span className="showcase-kicker">GSoC 26</span>
         <h2 className="showcase-title">OpenSource Contributions</h2>
         <p className="showcase-desc">Lumen + Xarray Integration</p>
         <div className="showcase-details">
@@ -43,10 +43,10 @@ export default function OpenSource() {
         <div className="showcase-image-wrapper">
           <img src="/Anaconda.png" alt="Anaconda Logo" />
           <div className="image-hover-overlay">
-            <div className="overlay-tag">ROBOTICS</div>
-            <h4 className="overlay-title">Micromouse Maze</h4>
+            <div className="overlay-tag">Anaconda</div>
+            <h4 className="overlay-title">Python Distribution</h4>
             <p className="overlay-desc">
-              Autonomous robotics navigation algorithms.
+              The Anaconda Python Distribution is a free, open-source bundle containing the Python and R languages
             </p>
           </div>
         </div>
