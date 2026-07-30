@@ -8,7 +8,7 @@ import ISROAndSIH from "@/components/ISRO&SIH";
 import SIHFinalsAndGenAI from "@/components/SIHfinals&GenAI";
 import Tier1Fests from "@/components/Tier1Fests";
 import ResearchAndOpenSource from "@/components/Research&Publications";
-import ExtractedRecords from "@/components/ExtractedRecords";
+import ExtractedRecords from "@/components/Projects";
 import Logo from "@/components/LogoAIMS/Logo";
 import ParallaxSection from "@/components/ParallaxSection";
 import CascadeReveal from "@/components/CascadeReveal";
@@ -41,7 +41,7 @@ export default function Home() {
           <a href="#fest-victories" className="nav-link">Fest Victories</a>
           <a href="#research"      className="nav-link">Research &amp; OS</a>
           <a href="#opensource"      className="nav-link">Opensource</a>
-          <a href="#records"       className="nav-link">Extracted Records</a>
+          <a href="#records"       className="nav-link">Projects</a>
         </div>
       </nav>
 
@@ -104,7 +104,7 @@ export default function Home() {
             <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", marginBottom: "0.5rem" }}>
               <Logo height={32} />
             </div>
-            <div style={{ fontSize: "1.2rem", color: "var(--muted)" }}>
+            <div style={{ fontSize: "1.2rem", color: "var(--muted)", fontWeight: "bold" }}>
               Get Ready For The Orientation on 12th August !
             </div>
           </div>
