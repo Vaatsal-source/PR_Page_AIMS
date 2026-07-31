@@ -25,7 +25,7 @@ export default function OpenSource() {
           <div className="image-hover-overlay">
             <div className="overlay-tag">Holoviz</div>
             
-            <p className="overlay-desc">National Winners presenting satellite nowcasting models.</p>
+            <p className="overlay-desc">Used for browser-based Python data visualization..</p>
           </div>
         </div>
         <div className="showcase-image-wrapper">
@@ -33,7 +33,7 @@ export default function OpenSource() {
           <div className="image-hover-overlay">
             <div className="overlay-tag">Anaconda</div>
             
-            <p className="overlay-desc">Innovative solutions for environmental monitoring.</p>
+            <p className="overlay-desc">A tool used to easily install, run, and update packages and manage complex dependencies without conflicts.</p>
           </div>
         </div>
         <div className="showcase-image-wrapper">
