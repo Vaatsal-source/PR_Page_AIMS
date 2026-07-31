@@ -56,14 +56,6 @@ export default function ISROAndSIH() {
             <p className="overlay-desc">Evaluations stage at IIT Delhi detecting code leaks.</p>
           </div>
         </div>
-        <div className="showcase-image-wrapper">
-          <img src="/GenAI.png" alt="Google GenAI Winner Ceremony" />
-          <div className="image-hover-overlay">
-            <div className="overlay-tag">GOOGLE GENAI 2025</div>
-            <h4 className="overlay-title">Authenticoders</h4>
-            <p className="overlay-desc">TruthLens platform combating synthetic media.</p>
-          </div>
-        </div>
       </div>
     </section>
   );

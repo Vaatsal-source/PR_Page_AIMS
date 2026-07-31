@@ -44,19 +44,19 @@ export default function ResearchAndOpenSource() {
         </p>
         <div className="showcase-details">
           <div className="detail-item">
-            <a href="https://openreview.net/challenge?redirect=%2Fforum%3Fid%3DdfPQrg1WA5" target="_blank" rel="noopener noreferrer">NeurIPS 2025</a>
+            <a className="detail-link" href="https://openreview.net/challenge?redirect=%2Fforum%3Fid%3DdfPQrg1WA5" target="_blank" rel="noopener noreferrer">NeurIPS 2025</a>
             <div className="detail-text">EVOLVE-MEM: A Self Adaptive Hierarchical Memory Architecture for Next Generation Agentic AI Systems.</div>
           </div>
           <div className="detail-item">
-            <a href="https://aclanthology.org/2026.acl-srw.58/" target="_blank" rel="noopener noreferrer">ACL SRW 2026</a>
+            <a className="detail-link" href="https://aclanthology.org/2026.acl-srw.58/" target="_blank" rel="noopener noreferrer">ACL SRW 2026</a>
             <div className="detail-text">CBAL: Context Based Agentic Learning for Speaker Diarization Segmentation Refinement.</div>
           </div>
           <div className="detail-item">
-            <a href="https://openreview.net/forum?id=AQa4JEUpbV" target="_blank" rel="noopener noreferrer">CVPR NTIRE 2026</a>
+            <a className="detail-link" href="https://openaccess.thecvf.com/content/CVPR2026W/NTIRE/papers/Rajput_Not_All_Pixels_Sink_Phase-Guided_Representation_Learning_For_Underwater_Image_CVPRW_2026_paper.pdf" target="_blank" rel="noopener noreferrer">CVPR NTIRE 2026</a>
             <div className="detail-text">Not All Pixels Sink: Phase-Guided Representation Learning For Underwater Image Restoration.</div>
           </div>
           <div className="detail-item">
-            <a href="https://arxiv.org/abs/2606.19579" target="_blank" rel="noopener noreferrer">ICML ML4AUDIO 2026</a>
+            <a className="detail-link" href="https://arxiv.org/abs/2606.19579" target="_blank" rel="noopener noreferrer">ICML ML4AUDIO 2026</a>
             <div className="detail-text">FlowFake: Liquid Networks for Audio Deepfake Detection.</div>
           </div>
         </div>

@@ -1,114 +1,57 @@
-"use client";
-
-import { useState } from "react";
-
 export default function OpenSource() {
-  const slides = [
-    {
-      image: "/GSoC.png",
-      name: "Aman Kumar",
-      role: "GSoC '26 & OpenSource",
-      bgText: "SMART FASTER SMART BUILDERS",
-    },
-    {
-      image: "/Anaconda.png",
-      name: "Python Dev Environment",
-      role: "Anaconda is a distribution of the Python programming language (and previously also R) for scientific computing (data science, machine learning applications",
-      bgText: "BUILD SMARTER, FASTER",
-    },
-    {
-      image: "/Holoviz.png",
-      name: "Holoviz",
-      role: "Panel is a fully open source Python library which enables users to create interactive, web-based data dashboards.",
-      bgText: "FASTER SMARTER BUILDERS",
-    },
-    {
-      image: "/Xarray.png",
-      name: "Xarray",
-      role: "Xarray is a Python library for working with multi-dimensional labeled arrays.",
-      bgText: "SMART BUILDERS IN MOTION",
-    },
-    {
-      image: "/Lumen.png",
-      name: "Lumen",
-      role: "Lumen is a Python library for creating interactive, web-based data visualizations.",
-      bgText: "SMART FASTER BUILDERS",
-    },
-  ];
-  const [index, setIndex] = useState(0);
-  const [bgText, setBgText] = useState(slides[0].bgText);
-  const [direction, setDirection] = useState("next");
-  const [animating, setAnimating] = useState(false);
-  const [bgAnimating, setBgAnimating] = useState(false);
-
-  const changeSlide = (nextIndex, dir) => {
-    if (animating || nextIndex === index) return;
-    setDirection(dir);
-    setBgText(slides[nextIndex].bgText);
-    setBgAnimating(true);
-    setAnimating(true);
-
-    window.setTimeout(() => {
-      setIndex(nextIndex);
-      setAnimating(false);
-      setBgAnimating(false);
-    }, 320);
-  };
-
-  const prev = () => changeSlide((index - 1 + slides.length) % slides.length, "prev");
-  const next = () => changeSlide((index + 1) % slides.length, "next");
-  const goTo = (i) => changeSlide(i, i > index ? "next" : "prev");
-
   return (
-    <section id="opensource" className="opensource-section">
-      <div className="opensource-top">
-        <div className="percentage-badge">
-          <span className="percentage-val">100%</span>
-          <span className="percentage-caption">Student-led research &amp; open-source engineering</span>
-        </div>
-
-        <article className="badge-card">
-          <span className="badge-chip">#01</span>
-          <div className="badge-content">
-            <h3>Trusted by serious builders</h3>
-            <p>From first-year developers to national hackathon champions and published researchers, students build here because the output ships.</p>
-          </div>
-        </article>
-      </div>
-
-      <div className="opensource-center">
-        <div className="slide-frame">
-          <figure className={`center-coach-card slide ${animating ? `slide-${direction}` : ""}`} key={index}>
-            <div className={`designer-bg ${bgAnimating ? "phrase-animate" : ""}`}>
-              <span className="designer-phrase">{bgText}</span>
+    <section id="hackathons" className="showcase-section">
+      <div className="showcase-info">
+        <span className="showcase-kicker">OpenSource Contributions</span>
+        <h2 className="showcase-title"> GSoC '26  @NumFOCUS</h2>
+        <p className="showcase-desc">
+          Contributor :<strong> Aman Kumar</strong> <br/>Mentor:<strong> Andrew H, Andy Maloney</strong><br/>Organisation: <strong>NumFOCUS</strong><br/>Maintainer: <strong>Holoviz/Lumen</strong><br/>Author of: <strong>Lumen-OurWorldInData</strong>
+        </p>
+        <div className="showcase-details">
+          <div className="detail-item">
+            <div className="detail-tag">Lumen + Xarray Integration</div>
+            <div className="detail-text">
+              Lumen Handles Tabular Data and Xarray Handles Multi-Dimensional Data. This project aims to integrate both libraries to provide a unified interface for handling both types of data seamlessly.
             </div>
-            <img src={slides[index].image} alt={`${slides[index].name} - ${slides[index].role}`} />
-            <figcaption className="coach-caption">
-              <div className="coach-name">{slides[index].name}</div>
-              <div className="coach-role">{slides[index].role}</div>
-            </figcaption>
-          </figure>
+          </div>
+          
         </div>
       </div>
 
-      <div className="opensource-controls">
-        <button type="button" className="arrow-btn outline" aria-label="Previous slide" onClick={prev}>
-          <svg viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" fill="none">
-            <path d="M5 12h14M13 6l-6 6 6 6" />
-          </svg>
-        </button>
-        <div className="carousel-dots dark" aria-label="Coach slides pagination">
-          {slides.map((s, i) => (
-            <button key={i} type="button" aria-current={i === index} onClick={() => goTo(i)}>
-              <span></span>
-            </button>
-          ))}
+      {/* 2x2 Image Grid with Hover Blur and Gradient overlays */}
+      <div className="image-grid-2x2">
+        <div className="showcase-image-wrapper">
+          <img src="/Holoviz.png" alt="Holo" />
+          <div className="image-hover-overlay">
+            <div className="overlay-tag">Holoviz</div>
+            
+            <p className="overlay-desc">National Winners presenting satellite nowcasting models.</p>
+          </div>
         </div>
-        <button type="button" className="arrow-btn solid" aria-label="Next slide" onClick={next}>
-          <svg viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" fill="none">
-            <path d="M5 12h14M13 6l6 6-6 6" />
-          </svg>
-        </button>
+        <div className="showcase-image-wrapper">
+          <img src="/Anaconda.png" alt="Anacon" />
+          <div className="image-hover-overlay">
+            <div className="overlay-tag">Anaconda</div>
+            
+            <p className="overlay-desc">Innovative solutions for environmental monitoring.</p>
+          </div>
+        </div>
+        <div className="showcase-image-wrapper">
+          <img src="/Cake.jpeg" alt="NCIIPC Winner Ceremony" />
+          <div className="image-hover-overlay">
+            <div className="overlay-tag">NCIIPC 2025</div>
+            <h4 className="overlay-title">PS-1 Vulnerability</h4>
+            <p className="overlay-desc">Evaluations stage at IIT Delhi detecting code leaks.</p>
+          </div>
+        </div>
+        <div className="showcase-image-wrapper">
+          <img src="/Camp.jpeg" alt="NCIIPC Winner Ceremony" />
+          <div className="image-hover-overlay">
+            <div className="overlay-tag">NCIIPC 2025</div>
+            <h4 className="overlay-title">PS-1 Vulnerability</h4>
+            <p className="overlay-desc">Evaluations stage at IIT Delhi detecting code leaks.</p>
+          </div>
+        </div>
       </div>
     </section>
   );

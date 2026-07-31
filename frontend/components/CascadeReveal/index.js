@@ -13,7 +13,7 @@ import { useEffect, useRef, useState } from "react";
  * @param {string}  options.rootMargin  IO root margin
  */
 export function useCascadeReveal({
-  staggerMs   = 120,
+  staggerMs   = 0,
   threshold   = 0.15,
   rootMargin  = "0px 0px -60px 0px",
 } = {}) {
@@ -33,10 +33,16 @@ export function useCascadeReveal({
       ([entry]) => {
         if (entry.isIntersecting) {
           children.forEach((child, i) => {
-            setTimeout(() => {
+            const delay = i * staggerMs;
+            if (delay > 0) {
+              setTimeout(() => {
+                child.classList.remove("cascade-hidden");
+                child.classList.add("cascade-visible");
+              }, delay);
+            } else {
               child.classList.remove("cascade-hidden");
               child.classList.add("cascade-visible");
-            }, i * staggerMs);
+            }
           });
           io.disconnect();
         }
