@@ -40,7 +40,7 @@ export default function ExtractedRecords() {
         Drones, Cricket Simulations, Tekken We Have It All !
       </p>
 
-      <div className="image-grid-2x2" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(240px, 1fr))", gap: "1.5rem" }}>
+      <div className="image-grid-2x2" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: "1.5rem" }}>
         {extractedRecords.map((record, index) => (
           <div key={index} className="showcase-image-wrapper" style={{ aspectRatio: "1 / 1" }}>
             <div className="placeholder-bg" style={{ background: "linear-gradient(45deg, #0f0f14 0%, #15151b 100%)" }}>

@@ -72,13 +72,6 @@ export default function Events() {
               A technical collaboration event centered on building solutions with Google&apos;s Gemma AI ecosystem.
             </div>
           </div>
-          <div className="detail-item">
-            <div className="detail-tag">Orientation 2025</div>
-            <div className="detail-text">
-              18 August 2025, attended by over 1,500 students, introducing AIMS&apos;s mottos and
-              showcasing projects like Gesture-Controlled Drones, Voice Cloning, and Traffic Monitoring.
-            </div>
-          </div>
         </div>
       </div>
 

@@ -37,19 +37,17 @@ export default function OpenSource() {
           </div>
         </div>
         <div className="showcase-image-wrapper">
-          <img src="/Cake.jpeg" alt="NCIIPC Winner Ceremony" />
+          <img src="/Cake.jpeg" alt="GSoC Celebrations" />
           <div className="image-hover-overlay">
-            <div className="overlay-tag">NCIIPC 2025</div>
-            <h4 className="overlay-title">PS-1 Vulnerability</h4>
-            <p className="overlay-desc">Evaluations stage at IIT Delhi detecting code leaks.</p>
+            <div className="overlay-tag">GSoC'26</div>
+            <p className="overlay-desc">GSoC'26 Delhi Celebrations</p>
           </div>
         </div>
         <div className="showcase-image-wrapper">
-          <img src="/Camp.jpeg" alt="NCIIPC Winner Ceremony" />
+          <img src="/Camp.jpeg" alt="GSoC Camp" />
           <div className="image-hover-overlay">
-            <div className="overlay-tag">NCIIPC 2025</div>
-            <h4 className="overlay-title">PS-1 Vulnerability</h4>
-            <p className="overlay-desc">Evaluations stage at IIT Delhi detecting code leaks.</p>
+            <div className="overlay-tag">GSoC'26</div>
+            <p className="overlay-desc">GSoC'26 Delhi Camp</p>
           </div>
         </div>
       </div>

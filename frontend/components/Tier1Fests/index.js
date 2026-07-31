@@ -97,19 +97,44 @@ function ImageCard({ title, image }) {
 
 export default function Tier1Fests() {
   return (
-    <>
-      {sections.map((section) => (
-        section.id === "bits-apogee" ? (
-          <section key={section.id} id={section.id} className="showcase-section fest-section">
+  <>
+    {sections.map((section) => (
+      <ParallaxSection
+        key={section.id}
+        id={section.id}
+        factor={0.12}
+        className="fest-subsection"
+      >
+        <CascadeReveal staggerMs={110}>
+          <section className="showcase-section fest-section">
             <div className="showcase-info">
-              {section.kicker && <span className="showcase-kicker">{section.kicker}</span>}
-              <h2 className="showcase-title">{section.title}</h2>
-              <p className="showcase-desc">{section.desc}</p>
+              {section.kicker && (
+                <span className="showcase-kicker">
+                  {section.kicker}
+                </span>
+              )}
+
+              <h2 className="showcase-title">
+                {section.title}
+              </h2>
+
+              <p className="showcase-desc">
+                {section.desc}
+              </p>
+
               <div className="showcase-details">
                 {section.items.map((item) => (
-                  <div className="detail-item" key={item.title}>
-                    <div className="detail-tag">{item.title}</div>
-                    <div className="detail-text">{item.desc}</div>
+                  <div
+                    className="detail-item"
+                    key={item.title}
+                  >
+                    <div className="detail-tag">
+                      {item.title}
+                    </div>
+
+                    <div className="detail-text">
+                      {item.desc}
+                    </div>
                   </div>
                 ))}
               </div>
@@ -119,45 +144,17 @@ export default function Tier1Fests() {
               {section.items
                 .filter((item) => item.image)
                 .map((item) => (
-                  <ImageCard key={item.title} title={item.title} image={item.image} />
+                  <ImageCard
+                    key={item.title}
+                    title={item.title}
+                    image={item.image}
+                  />
                 ))}
             </div>
           </section>
-        ) : (
-          <ParallaxSection
-            key={section.id}
-            id={section.id}
-            factor={section.id === "iit-bombay" ? 0.12 : 0.1}
-            className="fest-subsection"
-          >
-            <CascadeReveal staggerMs={110}>
-              <section className="showcase-section fest-section">
-                <div className="showcase-info">
-                  {section.kicker && <span className="showcase-kicker">{section.kicker}</span>}
-                  <h2 className="showcase-title">{section.title}</h2>
-                  <p className="showcase-desc">{section.desc}</p>
-                  <div className="showcase-details">
-                    {section.items.map((item) => (
-                      <div className="detail-item" key={item.title}>
-                        <div className="detail-tag">{item.title}</div>
-                        <div className="detail-text">{item.desc}</div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="image-grid-2x2">
-                  {section.items
-                    .filter((item) => item.image)
-                    .map((item) => (
-                      <ImageCard key={item.title} title={item.title} image={item.image} />
-                    ))}
-                </div>
-              </section>
-            </CascadeReveal>
-          </ParallaxSection>
-        )
-      ))}
-    </>
-  );
+        </CascadeReveal>
+      </ParallaxSection>
+    ))}
+  </>
+);
 }

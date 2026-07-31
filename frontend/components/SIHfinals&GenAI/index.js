@@ -1,6 +1,6 @@
 export default function SIHFinalsAndGenAI() {
   return (
-    <section id="sih-genai" className="showcase-section sih-genai-section" style={{ gridTemplateColumns: "1.2fr 1fr" }}>
+    <section id="sih-genai" className="showcase-section sih-genai-section">
       {/* 2x2 Image Grid Left */}
       <div className="image-grid-2x2">
         <div className="showcase-image-wrapper">
