@@ -23,10 +23,13 @@ export function useParallax(factor = 0.05, axis = "Y") {
       if (!ticking) {
         requestAnimationFrame(() => {
           const offset = window.scrollY * factor;
-          el.style.transform =
+          const transformValue =
             axis === "X"
               ? `translateX(${offset}px)`
               : `translateY(${offset}px)`;
+          // 'important' priority so this beats any !important transform
+          // rules coming from other components on the same element.
+          el.style.setProperty("transform", transformValue, "important");
           ticking = false;
         });
         ticking = true;
@@ -68,6 +71,19 @@ export default function ParallaxSection({
 
     let ticking = false;
 
+    const applyTransform = (delta) => {
+      // Force transform with !important priority so it beats
+      // CascadeReveal's `.cascade-child.cascade-visible { transform: ... !important }`
+      // rule when it lands on this same element.
+      el.style.setProperty(
+        "transform",
+        `translateY(${delta}px)`,
+        "important"
+      );
+      // Keep the CSS var in sync too, in case anything else reads it.
+      el.style.setProperty("--parallax-shift", `${delta}px`);
+    };
+
     const onScroll = () => {
       if (!ticking) {
         requestAnimationFrame(() => {
@@ -78,7 +94,7 @@ export default function ParallaxSection({
           const progress = Math.max(-1, Math.min(1, (viewMid - sectionMid) / viewMid));
           const delta = progress * viewH * factor * 0.35;
 
-          el.style.setProperty("--parallax-shift", `${delta}px`);
+          applyTransform(delta);
           ticking = false;
         });
         ticking = true;
