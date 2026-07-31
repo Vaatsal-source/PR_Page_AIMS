@@ -1,6 +1,6 @@
 export default function KaggleHacks() {
   return (
-    <section id="research" className="showcase-section research-open-source-section light-showcase">
+    <section id="researchKaggle" className="showcase-section research-open-source-section light-showcase">
       <div className="image-grid-2x2">
         <div className="showcase-image-wrapper">
           <img src="/Orbit.png" alt="EVOLVE-MEM" />
@@ -16,6 +16,22 @@ export default function KaggleHacks() {
             <div className="overlay-tag">Stanford RNA 3D Folding</div>
             <h4 className="overlay-title">RNA 3D Folding</h4>
             <p className="overlay-desc">Predicting the 3D structure of RNA molecules using machine learning.</p>
+          </div>
+        </div>
+        <div className="showcase-image-wrapper">
+          <img src="/KR.jpeg" alt="RNA" />
+          <div className="image-hover-overlay">
+            <div className="overlay-tag">Certificate of Achievement</div>
+            <h4 className="overlay-title">Placed 106 of 1867</h4>
+            <p className="overlay-desc">Kaggle Expert : Rudransh</p>
+          </div>
+        </div>
+        <div className="showcase-image-wrapper">
+          <img src="/KA.jpeg" alt="RNA" />
+          <div className="image-hover-overlay">
+            <div className="overlay-tag">Certificate of Achievement</div>
+            <h4 className="overlay-title">Placed 253 of 4729</h4>
+            <p className="overlay-desc">Kaggle Expert : Aman</p>
           </div>
         </div>
       </div>

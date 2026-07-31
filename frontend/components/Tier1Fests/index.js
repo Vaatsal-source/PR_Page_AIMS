@@ -66,7 +66,7 @@ const sections = [
         desc: "The competition evaluated participants across multiple computer science domains including Data Structures, Operating Systems, Database Management Systems and core CS fundamentals.",
       },
       {
-        title: "Guessapaloza (1st)",
+        title: "Guessapaloza (3rd)",
         image: "/Guessapaloza.png",
         desc: "A Guesstimates competition where spontaneous problems were provided to test analytical reasoning, structured thinking, and approximation skills.",
       },

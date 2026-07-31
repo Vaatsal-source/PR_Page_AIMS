@@ -21,6 +21,7 @@ export default function HeroSection() {
           <a href="#records">Projects</a>
           <a href="#research">Research</a>
           <a href="#opensource">Open Source</a>
+          <a href="#researchKaggle">Kaggle Hacks</a>
         </nav>
 
         <div className="hero-topbar-center">
