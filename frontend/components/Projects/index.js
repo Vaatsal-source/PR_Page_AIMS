@@ -6,28 +6,28 @@ const extractedRecords = [
     image: "/BatSimul.jpeg" 
   },
   {
-    tag: "Invictus 2026",
-    title: "1st: BITS CS Fundamentals",
-    desc: "Dominated Third place in computer systems and foundational algorithms.",
-    image: "/BIT3.png"
+    tag: "Drone",
+    title: "UAV Drone",
+    desc: "Production Grade Drone.",
+    image: "/DroneStruct.jpeg"
   },
   {
-    tag: "BITS Apogee 2026",
-    title: "1st: Product CaseComp",
-    desc: "Won first position in product framework and corporate strategy presentation.",
-    image: "/ProductComp1.png" 
+    tag: "Drone Testing",
+    title: "Takeoff",
+    desc: "Controlling the Drone with a python software.",
+    image: "/DroneFly.jpeg" 
   },
   {
-    tag: "BITS Apogee 2026",
-    title: "1st & 2nd: Green Tag Climate Tech",
-    desc: "Pioneered sustainable technology models for green tracking indexes.",
-    image: "/GreenTag1,2.png"
+    tag: "Drone",
+    title: "Configuring The Drone",
+    desc: "Setting up and calibrating the drone's systems.",
+    image: "/Drone.jpeg"
   },
   {
-    tag: "IIT Bombay Techfest 2025",
-    title: "1st: ZerveAI Health Insurance Datathon",
-    desc: "Engineered predictive claim modeling tools using tabular deep learning.",
-    image: "ZerveAI.png"
+    tag: "Virtual Cricket",
+    title: "Batting Simulation",
+    desc: "Simulating Batting in a Virtual Cricket Game.",
+    image: "/Bat.jpeg"
   },
 ];
 
@@ -65,6 +65,34 @@ export default function ExtractedRecords() {
           </div>
         ))}
       </div>
+
+      {/* By the numbers / stats section (inserted under projects) */}
+      <section id="stats" className="by-numbers">
+        <div className="main-layout" style={{ padding: 0 }}>
+          <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+            <div className="kicker">BY THE NUMBERS</div>
+            <h3 className="by-title">A society that ships code</h3>
+            <div className="stats-grid">
+              <div className="stat">
+                <div className="num">03+</div>
+                <div className="cap">National Winners · ISRO BAH & SIH '25</div>
+              </div>
+              <div className="stat">
+                <div className="num">20+</div>
+                <div className="cap">Championship finishes across India</div>
+              </div>
+              <div className="stat">
+                <div className="num">05+</div>
+                <div className="cap">NeurIPS, ICML, CVPR & ACL papers</div>
+              </div>
+              <div className="stat">
+                <div className="num">4.5K+</div>
+                <div className="cap">Participants in brAInwave & workshops</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
   );
 }

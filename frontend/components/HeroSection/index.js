@@ -1,38 +1,82 @@
+"use client";
+
+import { useEffect, useState } from "react";
+import Logo from "@/components/LogoAIMS/Logo";
+
 export default function HeroSection() {
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    const timeout = window.setTimeout(() => setLoaded(true), 300);
+    return () => window.clearTimeout(timeout);
+  }, []);
+
   return (
-    <section className="hero-section" style={{ position: "relative", overflow: "hidden" }}>
+    <section className={`hero-section aims-hero ${loaded ? "hero-loaded" : "hero-loading"}`}>
+      {/* Top Navigation Bar */}
+      <header className="hero-topbar">
+        <nav className="hero-topbar-left">
+          <a href="#hackathons">Programs & Achievements</a>
+          <a href="#events">Showcase & Events</a>
+          <a href="#records">Projects</a>
+          <a href="#research">Research</a>
+          <a href="#opensource">Open Source</a>
+        </nav>
 
-      <h1 className="hero-main-title hero-enter-1">
-        AT AIMS DTU, WE BUILD COMPETE AND PUBLISH
-      </h1>
+        <div className="hero-topbar-center">
+          <span className="hero-logo-text">
+            <Logo height={35} color="#ffffff" bgColor="#0f2f63" />
+          </span>
+        </div>
+      </header>
 
-      <p
-        className="showcase-desc hero-enter-2"
-        style={{ maxWidth: "800px", margin: "0 auto 3rem auto", fontSize: "1.2rem" }}
-      >
-      Hackathon wins, published research, and open-source projects run by students, for students who want to actually ship something.
-      </p>
-
-      <div className="hero-stats hero-enter-3" style={{ marginTop: "1rem" }}>
-        <div className="stat-box">
-          <span className="stat-value">03+</span>
-          <span className="stat-label">National Wins</span>
+      {/* Background Image / Overlay */}
+      <div className="hero-bg-plate">
+        <div className="hero-bg-inner">
         </div>
-        <div className="stat-box">
-          <span className="stat-value">20+</span>
-          <span className="stat-label">Podium Finishes</span>
-        </div>
-        <div className="stat-box">
-          <span className="stat-value">05+</span>
-          <span className="stat-label">A* Publications</span>
-        </div>
+        <div className="hero-bg-overlay" />
       </div>
 
-      <div
-        className="stat-label hero-enter-4"
-        style={{ marginTop: "2.5rem", fontSize: "1.2rem", fontWeight: "700" }}
-      >
-        Since the last year
+      {/* Hero Main Headline */}
+      <div className="hero-title-block">
+        <h1 className="hero-main-title">BUILD COMPETE WIN</h1>
+      </div>
+
+      {/* Bottom Content Row */}
+      <div className="hero-bottom-row">
+        <div className="hero-tagline-container">
+          <p className="hero-tagline hero-tagline-stacked">
+            <span>SHOW UP,</span>
+            <span>SHIP CODE</span>
+          </p>
+        </div>
+
+        {/* Bottom-Right Glass Stat Card */}
+        <article className="membership-card hero-stat-card">
+          <div className="stat-card-left">
+            <div className="membership-val">4.5K+</div>
+            <div className="avatar-meta-row">
+              <div className="avatar-circles">
+                <span className="avatar-circle"></span>
+                <span className="avatar-circle"></span>
+                <span className="avatar-circle"></span>
+              </div>
+              <span className="membership-caption">Hackathon Participants</span>
+            </div>
+          </div>
+
+          <div className="stat-card-divider" />
+
+          <div className="stat-card-right">
+            <div className="membership-thumb">
+              <img src="/Brainwave.png" alt="brAInwave 2.0" />
+            </div>
+            <div className="membership-copy">
+              <div className="membership-copy-title">brAInwave 2.0</div>
+              <div className="membership-copy-sub">36-Hour National</div>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
   );

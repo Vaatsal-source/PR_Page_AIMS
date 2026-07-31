@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 /**
  * useCascadeReveal — attaches an IntersectionObserver to a container
@@ -24,9 +24,9 @@ export function useCascadeReveal({
     if (!container) return;
 
     const children = Array.from(container.children);
-    // Reset state
+    // Prepare reveal animation only after hydration, but keep server-rendered content visible.
     children.forEach((child) => {
-      child.classList.add("cascade-child");
+      child.classList.add("cascade-child", "cascade-hidden");
     });
 
     const io = new IntersectionObserver(
@@ -34,6 +34,7 @@ export function useCascadeReveal({
         if (entry.isIntersecting) {
           children.forEach((child, i) => {
             setTimeout(() => {
+              child.classList.remove("cascade-hidden");
               child.classList.add("cascade-visible");
             }, i * staggerMs);
           });
@@ -68,10 +69,19 @@ export default function CascadeReveal({
   style      = {},
   as: Tag    = "div",
 }) {
+  const [isHydrated, setIsHydrated] = useState(false);
   const ref = useCascadeReveal({ staggerMs });
 
+  useEffect(() => {
+    setIsHydrated(true);
+  }, []);
+
   return (
-    <Tag ref={ref} className={`cascade-container ${className}`} style={style}>
+    <Tag
+      ref={ref}
+      className={`cascade-container ${isHydrated ? "cascade-active" : ""} ${className}`.trim()}
+      style={style}
+    >
       {children}
     </Tag>
   );

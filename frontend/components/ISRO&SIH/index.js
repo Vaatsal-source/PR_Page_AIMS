@@ -5,14 +5,14 @@ export default function ISROAndSIH() {
         <span className="showcase-kicker">National Winners</span>
         <h2 className="showcase-title">ISRO & Smart India Hackathons</h2>
         <p className="showcase-desc">
-          AIMS DTU teams conquered India's most prestigious government hackathons, securing National Winner titles 
+          AIMS DTU teams conquered India&apos;s most prestigious government hackathons, securing National Winner titles 
           by engineering deep learning and hardware systems.
         </p>
         <div className="showcase-details">
           <div className="detail-item">
             <div className="detail-tag">ISRO Bharatiya Antariksh Hackathon (BAH) 2025</div>
             <div className="detail-text">
-              <strong>Team Rocket League</strong> Worked on the PS "Chasing The Clouds: Diffusion Based Satellite Nowcasting using INSAT 3DR/3DS Data".
+              <strong>Team Rocket League</strong> Worked on the PS &quot;Chasing The Clouds: Diffusion Based Satellite Nowcasting using INSAT 3DR/3DS Data&quot;.
             </div>
           </div>
           <div className="detail-item">

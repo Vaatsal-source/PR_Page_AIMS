@@ -1,9 +1,5 @@
 const eventCards = [
   {
-    title: "Orientation 2025",
-    image: "/Orientation.png",
-  },
-  {
     title: "HackDays by MLH",
     image: "/HackDays.png",
   },
