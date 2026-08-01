@@ -1,7 +1,36 @@
+import MobileSlideshow from "@/components/MobileSlideshow";
+
+const researchSlides = [
+  {
+    image: "/NeurIPS.png",
+    tag: "NEURIPS SEA 2025",
+    title: "EVOLVE-MEM",
+    desc: "Self-Adaptive memory systems for Agentic AI.",
+  },
+  {
+    image: "/CVPR.png",
+    tag: "CVPR NTIRE 2026",
+    title: "Underwater restoration",
+    desc: "Phase-guided representation pixels restoration models.",
+  },
+  {
+    image: "/CBAL.png",
+    tag: "ACL SRW 2026",
+    title: "CBAL",
+    desc: "Context Based Agentic Learning",
+  },
+  {
+    image: "/ICML.png",
+    tag: "ICML ML4AUDIO 2026",
+    title: "FlowFake",
+    desc: "Liquid Networks detecting audio deepfakes.",
+  },
+];
+
 export default function ResearchAndOpenSource() {
   return (
     <section id="research" className="showcase-section research-open-source-section light-showcase">
-      <div className="image-grid-2x2">
+      <div className="image-grid-2x2 desktop-grid">
         <div className="showcase-image-wrapper">
           <img src="/NeurIPS.png" alt="EVOLVE-MEM" />
           <div className="image-hover-overlay">
@@ -61,6 +90,10 @@ export default function ResearchAndOpenSource() {
           </div>
         </div>
       </div>
+
+      <MobileSlideshow slides={researchSlides} />
     </section>
   );
 }
+
+

@@ -1,3 +1,32 @@
+import MobileSlideshow from "@/components/MobileSlideshow";
+
+const openSourceSlides = [
+  {
+    image: "/Holoviz.png",
+    tag: "Holoviz",
+    title: "Lumen Visualization",
+    desc: "Used for browser-based Python data visualization.",
+  },
+  {
+    image: "/Anaconda.png",
+    tag: "Anaconda",
+    title: "Package Management",
+    desc: "Installed and managed complex dependencies for data science workflows.",
+  },
+  {
+    image: "/Cake.jpeg",
+    tag: "GSoC'26",
+    title: "Campus Celebrations",
+    desc: "GSoC'26 Delhi Celebrations with the open source community.",
+  },
+  {
+    image: "/Camp.jpeg",
+    tag: "GSoC'26",
+    title: "Developer Camp",
+    desc: "GSoC'26 Delhi Camp participation and collaboration.",
+  },
+];
+
 export default function OpenSource() {
   return (
     <section id="hackathons" className="showcase-section">
@@ -14,25 +43,22 @@ export default function OpenSource() {
               Lumen Handles Tabular Data and Xarray Handles Multi-Dimensional Data. This project aims to integrate both libraries to provide a unified interface for handling both types of data seamlessly.
             </div>
           </div>
-          
         </div>
       </div>
 
       {/* 2x2 Image Grid with Hover Blur and Gradient overlays */}
-      <div className="image-grid-2x2">
+      <div className="image-grid-2x2 desktop-grid">
         <div className="showcase-image-wrapper">
           <img src="/Holoviz.png" alt="Holo" />
           <div className="image-hover-overlay">
             <div className="overlay-tag">Holoviz</div>
-            
-            <p className="overlay-desc">Used for browser-based Python data visualization..</p>
+            <p className="overlay-desc">Used for browser-based Python data visualization.</p>
           </div>
         </div>
         <div className="showcase-image-wrapper">
           <img src="/Anaconda.png" alt="Anacon" />
           <div className="image-hover-overlay">
             <div className="overlay-tag">Anaconda</div>
-            
             <p className="overlay-desc">A tool used to easily install, run, and update packages and manage complex dependencies without conflicts.</p>
           </div>
         </div>
@@ -51,6 +77,8 @@ export default function OpenSource() {
           </div>
         </div>
       </div>
+
+      <MobileSlideshow slides={openSourceSlides} />
     </section>
   );
 }

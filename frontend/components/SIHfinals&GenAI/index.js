@@ -1,8 +1,37 @@
+import MobileSlideshow from "@/components/MobileSlideshow";
+
+const sihSlides = [
+  {
+    image: "/GradientAscent.png",
+    tag: "SIH FINALIST",
+    title: "Gradient Ascent",
+    desc: "Multimodal Audio MoE model running locally.",
+  },
+  {
+    image: "/ChocoRev.png",
+    tag: "SIH FINALIST",
+    title: "ChocoRev",
+    desc: "GNN candidate-opportunity recommendation engine.",
+  },
+  {
+    image: "/NeuralShural.png",
+    tag: "SIH FINALIST",
+    title: "NeuralShural",
+    desc: "Computer Vision systems for counterfeit IC analysis.",
+  },
+  {
+    image: "/GenAI.png",
+    tag: "GOOGLE GENAI",
+    title: "GenAI Exchange 2025",
+    desc: "Top 10 India build verifying misinformation leaks.",
+  },
+];
+
 export default function SIHFinalsAndGenAI() {
   return (
     <section id="sih-genai" className="showcase-section sih-genai-section">
       {/* 2x2 Image Grid Left */}
-      <div className="image-grid-2x2">
+      <div className="image-grid-2x2 desktop-grid">
         <div className="showcase-image-wrapper">
           <img src="/GradientAscent.png" alt="Gradient Ascent" />
           <div className="image-hover-overlay">
@@ -64,6 +93,8 @@ export default function SIHFinalsAndGenAI() {
           </div>
         </div>
       </div>
+
+      <MobileSlideshow slides={sihSlides} />
     </section>
   );
 }

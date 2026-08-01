@@ -1,7 +1,36 @@
+import MobileSlideshow from "@/components/MobileSlideshow";
+
 export default function KaggleHacks() {
+  const slides = [
+    {
+      image: "/Orbit.png",
+      tag: "Orbit Wars",
+      title: "Orbital Dynamics",
+      desc: "Goal of the competition was to create and/or train AI bots to play a novel multi-agent 1v1 or 4p FFA game against other submitted agents.",
+    },
+    {
+      image: "/RNA.png",
+      tag: "Stanford RNA 3D Folding",
+      title: "RNA 3D Folding",
+      desc: "Predicting the 3D structure of RNA molecules using machine learning.",
+    },
+    {
+      image: "/KR.jpeg",
+      tag: "Certificate of Achievement",
+      title: "Placed 106 of 1867",
+      desc: "Kaggle Expert : Rudransh",
+    },
+    {
+      image: "/KA.jpeg",
+      tag: "Certificate of Achievement",
+      title: "Placed 253 of 4729",
+      desc: "Kaggle Expert : Aman",
+    },
+  ];
+
   return (
     <section id="researchKaggle" className="showcase-section research-open-source-section light-showcase">
-      <div className="image-grid-2x2">
+      <div className="image-grid-2x2 desktop-grid">
         <div className="showcase-image-wrapper">
           <img src="/Orbit.png" alt="EVOLVE-MEM" />
           <div className="image-hover-overlay">
@@ -53,6 +82,8 @@ export default function KaggleHacks() {
           </div>
         </div>
       </div>
+
+      <MobileSlideshow slides={slides} />
     </section>
   );
 }

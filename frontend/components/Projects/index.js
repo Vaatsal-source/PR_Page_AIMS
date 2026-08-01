@@ -1,3 +1,5 @@
+import MobileSlideshow from "@/components/MobileSlideshow";
+
 const extractedRecords = [
   {
     tag: "Cricket Simulations",
@@ -40,7 +42,7 @@ export default function ExtractedRecords() {
         Drones, Cricket Simulations, Tekken We Have It All !
       </p>
 
-      <div className="image-grid-2x2" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: "1.5rem" }}>
+      <div className="image-grid-2x2 desktop-grid" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))", gap: "1.5rem" }}>
         {extractedRecords.map((record, index) => (
           <div key={index} className="showcase-image-wrapper" style={{ aspectRatio: "1 / 1" }}>
             <div className="placeholder-bg" style={{ background: "linear-gradient(45deg, #0f0f14 0%, #15151b 100%)" }}>
@@ -65,6 +67,8 @@ export default function ExtractedRecords() {
           </div>
         ))}
       </div>
+
+      <MobileSlideshow slides={extractedRecords} />
 
       {/* By the numbers / stats section (inserted under projects) */}
       <section id="stats" className="by-numbers">

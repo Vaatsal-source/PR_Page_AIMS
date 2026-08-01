@@ -1,5 +1,6 @@
 import ParallaxSection from "@/components/ParallaxSection";
 import CascadeReveal from "@/components/CascadeReveal";
+import MobileSlideshow from "@/components/MobileSlideshow";
 
 const sections = [
   {
@@ -140,7 +141,7 @@ export default function Tier1Fests() {
               </div>
             </div>
 
-            <div className="image-grid-2x2">
+           <div className="image-grid-2x2 desktop-grid">
               {section.items
                 .filter((item) => item.image)
                 .map((item) => (
@@ -151,6 +152,16 @@ export default function Tier1Fests() {
                   />
                 ))}
             </div>
+
+            <MobileSlideshow
+              slides={section.items
+                .filter((item) => item.image)
+                .map((item) => ({
+                  image: item.image,
+                  title: item.title,
+                  desc: item.desc,
+                }))}
+            />
           </section>
         </CascadeReveal>
       </ParallaxSection>

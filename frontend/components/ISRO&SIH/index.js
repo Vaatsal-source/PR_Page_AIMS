@@ -1,3 +1,26 @@
+import MobileSlideshow from "@/components/MobileSlideshow";
+
+const isroSlides = [
+  {
+    image: "/ISRO_Bah.png",
+    tag: "ISRO BAH 2025",
+    title: "Team Rocket League",
+    desc: "National Winners presenting satellite nowcasting models.",
+  },
+  {
+    image: "/ToinCoss.png",
+    tag: "SIH 2025",
+    title: "Team ToinCoss",
+    desc: "Anti Proxy smart attendance hardware dashboard.",
+  },
+  {
+    image: "/NCIIPC.png",
+    tag: "NCIIPC 2025",
+    title: "PS-1 Vulnerability",
+    desc: "Evaluations stage at IIT Delhi detecting code leaks.",
+  },
+];
+
 export default function ISROAndSIH() {
   return (
     <section id="hackathons" className="showcase-section">
@@ -31,7 +54,7 @@ export default function ISROAndSIH() {
       </div>
 
       {/* 2x2 Image Grid with Hover Blur and Gradient overlays */}
-      <div className="image-grid-2x2">
+      <div className="image-grid-2x2 desktop-grid">
         <div className="showcase-image-wrapper">
           <img src="/ISRO_Bah.png" alt="ISRO BAH Winner Ceremony" />
           <div className="image-hover-overlay">
@@ -57,6 +80,8 @@ export default function ISROAndSIH() {
           </div>
         </div>
       </div>
+
+      <MobileSlideshow slides={isroSlides} />
     </section>
   );
 }
