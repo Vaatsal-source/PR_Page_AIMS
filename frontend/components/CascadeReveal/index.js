@@ -14,8 +14,8 @@ import { useEffect, useRef, useState } from "react";
  */
 export function useCascadeReveal({
   staggerMs   = 0,
-  threshold   = 0.15,
-  rootMargin  = "0px 0px -60px 0px",
+  threshold   = 0,
+  rootMargin  = "0px 0px 0px 0px",
 } = {}) {
   const ref = useRef(null);
 

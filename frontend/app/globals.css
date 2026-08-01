@@ -1657,3 +1657,10 @@ grid-template-columns:1.2fr 1fr;
   }
 
 }
+
+/* Tier1Fests responsive fix */
+@media (max-width: 768px) {
+  .fest-subsection .showcase-section {
+    grid-template-columns: 1fr !important;
+  }
+}
