@@ -38,7 +38,7 @@ export default function Home() {
           </CascadeReveal>
         </ParallaxSection>
 
-        <ParallaxSection id="sih-genai" factor={0.15}>
+        <ParallaxSection id="sih-genai" factor={0.1}>
           <CascadeReveal staggerMs={0}>
             <SIHFinalsAndGenAI />
           </CascadeReveal>
@@ -50,7 +50,7 @@ export default function Home() {
           </CascadeReveal>
         </ParallaxSection>
 
-        <ParallaxSection id="research" factor={0.13}>
+        <ParallaxSection id="research" factor={0.1}>
           <CascadeReveal staggerMs={0}>
             <ResearchAndOpenSource />
           </CascadeReveal>
@@ -62,7 +62,7 @@ export default function Home() {
           </CascadeReveal>
         </ParallaxSection>
 
-        <ParallaxSection id="research" factor={0.13}>
+        <ParallaxSection id="research" factor={0.1}>
           <CascadeReveal staggerMs={0}>
             <KaggleHacks />
           </CascadeReveal>

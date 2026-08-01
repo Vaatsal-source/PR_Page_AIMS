@@ -1648,6 +1648,19 @@ grid-template-columns:1.2fr 1fr;
   .image-grid-2x2 {
     grid-template-columns: 1fr;
   }
+
+  /* Add extra spacing between parallax sections on mobile so slideshow controls don't overlap the next section. */
+  .parallax-section {
+    margin-bottom: 3rem;
+  }
+  .parallax-section:last-child {
+    margin-bottom: 0;
+  }
+  .mobile-slideshow,
+  .events-slideshow {
+    position: relative;
+    z-index: 2;
+  }
 }
 @media (max-width: 768px) {
   .sih-genai-section .showcase-info {
