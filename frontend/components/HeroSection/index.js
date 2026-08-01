@@ -65,18 +65,7 @@ export default function HeroSection() {
               <span className="membership-caption">Hackathon Participants</span>
             </div>
           </div>
-
-          <div className="stat-card-divider" />
-
-          <div className="stat-card-right">
-            <div className="membership-thumb">
-              <img src="/Brainwave.png" alt="brAInwave 2.0" />
-            </div>
-            <div className="membership-copy">
-              <div className="membership-copy-title">brAInwave 2.0</div>
-              <div className="membership-copy-sub">36-Hour National</div>
-            </div>
-          </div>
+          <div/>
         </article>
       </div>
     </section>
