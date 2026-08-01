@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+
 const eventCards = [
   {
     title: "HackDays by MLH",
@@ -26,6 +30,13 @@ const eventCards = [
 ];
 
 export default function Events() {
+  const [current, setCurrent] = useState(0);
+
+  const prev = () =>
+    setCurrent((c) => (c - 1 + eventCards.length) % eventCards.length);
+  const next = () =>
+    setCurrent((c) => (c + 1) % eventCards.length);
+
   return (
     <section id="events" className="showcase-section events-section">
       <div className="showcase-info">
@@ -75,7 +86,8 @@ export default function Events() {
         </div>
       </div>
 
-      <div className="image-grid-2x2 events-grid">
+      {/* Desktop / Tablet: 2×2 grid (unchanged) */}
+      <div className="image-grid-2x2 events-grid events-desktop-grid">
         {eventCards.map((event) => (
           <div className="showcase-image-wrapper" key={event.title}>
             <img
@@ -88,6 +100,58 @@ export default function Events() {
             </div>
           </div>
         ))}
+      </div>
+
+      {/* Mobile only: Slideshow */}
+      <div className="events-slideshow">
+        <div className="events-slide-track">
+          <div className="showcase-image-wrapper events-slide-img">
+            <img
+              src={eventCards[current].image}
+              alt={eventCards[current].title}
+              className="showcase-image"
+            />
+            <div className="image-hover-overlay">
+              <h4 className="overlay-title">{eventCards[current].title}</h4>
+            </div>
+          </div>
+        </div>
+
+        {/* Slide counter */}
+        <p className="events-slide-counter">
+          {current + 1} / {eventCards.length}
+        </p>
+
+        {/* Navigation arrows */}
+        <div className="events-slide-nav">
+          <button
+            className="events-slide-arrow"
+            onClick={prev}
+            aria-label="Previous event"
+          >
+            &#8592;
+          </button>
+
+          {/* Dot indicators */}
+          <div className="events-slide-dots">
+            {eventCards.map((_, i) => (
+              <button
+                key={i}
+                className={`events-dot${i === current ? " active" : ""}`}
+                onClick={() => setCurrent(i)}
+                aria-label={`Go to slide ${i + 1}`}
+              />
+            ))}
+          </div>
+
+          <button
+            className="events-slide-arrow"
+            onClick={next}
+            aria-label="Next event"
+          >
+            &#8594;
+          </button>
+        </div>
       </div>
     </section>
   );

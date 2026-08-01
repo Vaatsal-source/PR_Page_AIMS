@@ -262,7 +262,7 @@ grid-template-columns:1.2fr 1fr;
     rgba(15, 47, 99, 0.72)
   );
   -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(0);
   transition:
     opacity 280ms ease,
     transform 280ms ease;
@@ -1662,5 +1662,110 @@ grid-template-columns:1.2fr 1fr;
 @media (max-width: 768px) {
   .fest-subsection .showcase-section {
     grid-template-columns: 1fr !important;
+  }
+}
+
+/* ─── Events: desktop grid / mobile slideshow ─────────────────────────────── */
+
+/* Hide the slideshow on desktop; show the grid */
+.events-slideshow {
+  display: none;
+}
+.events-desktop-grid {
+  display: grid;
+}
+
+/* On mobile (≤768px): hide grid, show slideshow */
+@media (max-width: 768px) {
+  .events-desktop-grid {
+    display: none !important;
+  }
+
+  .events-slideshow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .events-slide-track {
+    width: 100%;
+    border-radius: 1.25rem;
+    overflow: hidden;
+  }
+
+  .events-slide-img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    border-radius: 1.25rem;
+    overflow: hidden;
+  }
+
+  /* Always show the title overlay on mobile (no hover on touch) */
+  .events-slide-img .image-hover-overlay {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .events-slide-counter {
+    font-size: 0.82rem;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    margin: 0;
+  }
+
+  .events-slide-nav {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .events-slide-arrow {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: var(--foreground);
+    border-radius: 50%;
+    width: 2.6rem;
+    height: 2.6rem;
+    font-size: 1.15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.15s ease;
+    flex-shrink: 0;
+  }
+
+  .events-slide-arrow:hover,
+  .events-slide-arrow:active {
+    background: rgba(255, 255, 255, 0.18);
+    transform: scale(1.08);
+  }
+
+  .events-slide-dots {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+  }
+
+  .events-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+    padding: 0;
+    transition: background 0.25s ease, transform 0.2s ease, width 0.2s ease;
+  }
+
+  .events-dot.active {
+    background: var(--brand-accent, #5b8dee);
+    transform: scale(1.2);
+    width: 1.4rem;
+    border-radius: 0.4rem;
   }
 }
